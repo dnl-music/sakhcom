@@ -24,7 +24,8 @@ class m190509_000751_create_table_news extends Migration
            'content' => $this->text(),
            'image' => $this->string(255),
            'rubric_id' => $this->integer()->notNull(),
-           'likes' => $this->integer()->defaultValue(0)
+           'likes' => $this->integer()->defaultValue(0),
+            'created_at' => $this->dateTime().' DEFAULT NOW()'
         ]);
 
         $this->addForeignKey(
