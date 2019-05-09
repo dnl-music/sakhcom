@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
     foreach($models as $model) {
         ?>
             <div>
-                <?= Html::img($model->image, ['class' => 'pull-left img-responsive']); ?>
+                <?= Html::img($model->image, ['class' => 'img-responsive']); ?>
                 <h3><?= $model->title ?></h3>
                 <p><?= $model->short_desc ?></p>
                 <p><?= $model->created_at ?></p>
